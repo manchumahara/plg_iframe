@@ -8,3 +8,6 @@ Simple Iframe for content Using: {iframe}your link{/iframe}, or {iframe width="5
 
 
 Note: this plugin code is hired from the popular mosiframe for j1.5 plugin which no longer supported as we know and we didn't find this for j3.x
+
+
+From the guys of team Codeboxr http://codeboxr.com
