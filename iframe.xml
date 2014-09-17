@@ -1,61 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="plugin" group="content" method="upgrade">
-	<name>Content - Iframe Plugin</name>
-	<author>Codeboxr</author>
-	<creationDate>17092014</creationDate>
-	<copyright>Copyright (C) 2014 . Codeboxr.com All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>info@codeboxr.com</authorEmail>
-	<authorUrl>http://codeboxr.com</authorUrl>
-	<version>1.0.0</version>
-	<description>		
-	 <![CDATA[
+    <name>Content - Iframe Plugin</name>
+    <author>Codeboxr</author>
+    <creationDate>17092014</creationDate>
+    <copyright>Copyright (C) 2014 . Codeboxr.com All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>info@codeboxr.com</authorEmail>
+    <authorUrl>http://codeboxr.com</authorUrl>
+    <version>1.0.0</version>
+    <description>
+        <![CDATA[
 	 Simple Iframe for content Using: {iframe}your link{/iframe}, or {iframe width="500" hight="400" ...}your link{/iframe}<br />Other parameters: http://www.w3schools.com/TAGS/tag_iframe.asp
 	 ]]>
-	</description>
-	<files>
-		<filename plugin="iframe">iframe.php</filename>
-		<filename>index.html</filename>
-	</files>
+    </description>
+    <files>
+        <filename plugin="iframe">iframe.php</filename>
+        <filename>index.html</filename>
+    </files>
 
 
-	
-     <config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field  name="enabled" type="radio" default="1" label="Enable Plugin" description="Enable pr Disable Plugin">
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				 </field>
-		        <field  name="src" type="text" default="http://www.luyenkim.net" label="URL To Show" description="Type in the full URL like http://www.abc.com. Or relative url help/help.html" />
-		        <field  name="src_inurl" type="radio" default="0" label="Enable URL" description="Pass parameters to the iframe URL by adding parameters to the main site URL. src=your_link.">
-			        <option value="0">JNO</option>
-			        <option value="1">JYES</option>
-		        </field>
-		         <field  name="width" type="text" default="100%" label="Frame Width" description="Type in the width of your frame in pixels or %." />
-		         <field  name="height" type="text" default="400" label="Frame Height" description="Type in the height of your frame in pixels." />
-		         <field  name="marginwidth" type="text" default="0" label="Margin Width" description="Type in the margin width of your frame in pixels." />
-		         <field  name="marginheight" type="text" default="0" label="Margin Height" description="Type in the margin height of your frame in pixels." />
-				<field  name="frameborder" type="radio" default="0" label="Frameborder" description="Specifies whether or not to display a frame border.">
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
-				<field  name="scrolling" type="radio" default="auto" label="Scroll bar" description="Define scroll bars.">
-					<option value="no">JNO</option>
-					<option value="yes">JYES</option>
-					<option value="auto">Auto</option>
-				</field>
-			    <field  name="align" type="list" default="bottom" label="Align" description="Specifies how to align the iframe according to the surrounding text">
-					<option value="left">Left</option>
-					<option value="right">Right</option>
-					<option value="top">Top</option>
-					<option value="middle">Middle</option>
-					<option value="bottom">Bottom</option>
-				</field>
-			 	
-		        <field  name="name" type="text" default="plg_iframe" label="Name" description="Specifies a unique name of the iframe (to use in scripts)." />
-		        <field  name="noframes" type="textarea" rows="5" cols="30" default="No Frames" label="No Frames" description="Extra information - Helpful for Google. " />			
-			</fieldset>
-		</fields>
-	</config>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="enabled" type="radio" default="1" label="Enable Plugin"
+                       description="Enable pr Disable Plugin">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="src" type="text" default="http://www.luyenkim.net" label="URL To Show"
+                       description="Type in the full URL like http://www.abc.com. Or relative url help/help.html"/>
+                <field name="src_inurl" type="radio" default="0" label="Enable URL"
+                       description="Pass parameters to the iframe URL by adding parameters to the main site URL. src=your_link.">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="width" type="text" default="100%" label="Frame Width"
+                       description="Type in the width of your frame in pixels or %."/>
+                <field name="height" type="text" default="400" label="Frame Height"
+                       description="Type in the height of your frame in pixels."/>
+                <field name="marginwidth" type="text" default="0" label="Margin Width"
+                       description="Type in the margin width of your frame in pixels."/>
+                <field name="marginheight" type="text" default="0" label="Margin Height"
+                       description="Type in the margin height of your frame in pixels."/>
+                <field name="frameborder" type="radio" default="0" label="Frameborder"
+                       description="Specifies whether or not to display a frame border.">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="scrolling" type="radio" default="auto" label="Scroll bar"
+                       description="Define scroll bars.">
+                    <option value="no">JNO</option>
+                    <option value="yes">JYES</option>
+                    <option value="auto">Auto</option>
+                </field>
+                <field name="align" type="list" default="bottom" label="Align"
+                       description="Specifies how to align the iframe according to the surrounding text">
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                    <option value="top">Top</option>
+                    <option value="middle">Middle</option>
+                    <option value="bottom">Bottom</option>
+                </field>
+
+                <field name="name" type="text" default="plg_iframe" label="Name"
+                       description="Specifies a unique name of the iframe (to use in scripts)."/>
+                <field name="noframes" type="textarea" rows="5" cols="30" default="No Frames" label="No Frames"
+                       description="Extra information - Helpful for Google. "/>
+            </fieldset>
+        </fields>
+    </config>
 </extension>
