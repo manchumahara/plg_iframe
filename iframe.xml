@@ -27,8 +27,8 @@
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
                 </field>
-                <field name="src" type="text" default="http://www.luyenkim.net" label="URL To Show"
-                       description="Type in the full URL like http://www.abc.com. Or relative url help/help.html"/>
+                <field name="src" type="text" default="http://codeboxr.com" label="URL To Show"
+                       description="Type in the full URL like http://codeboxr.com . Or relative url help/help.html"/>
                 <field name="src_inurl" type="radio" default="0" label="Enable URL"
                        description="Pass parameters to the iframe URL by adding parameters to the main site URL. src=your_link.">
                     <option value="0">JNO</option>
